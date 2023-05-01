@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block link %}
+<link rel="stylesheet", href="{{ url_for('static', filename='css/welcome-page.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="app-wrappwelcome">
+    <div class="kpk-logo-container">
+        <img src="static/samples/base_logo.png" alt="lorem">
+    </div>
+
+    <div class="welcome-container">
+        <h1>
+            Добро пожаловать в систему выдачи замен пар Колледжа Программирования и Кибербезопасности!
+        </h1>
+
+        <a href="/table" class="go-to-main"><h2>Перейти</h2></a>
+    </div>
+</div>
+{% endblock %}

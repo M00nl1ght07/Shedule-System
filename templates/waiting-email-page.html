@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/waiting-email-page.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="central-wrapper">
+
+        <div class="image-container">
+            <img src="static/samples/email-icon.png" alt="lorem">
+        </div>
+
+        <div class="check-email-message-container">
+            <h1 class="email-header">Подтверждение e-mail</h1>
+
+            <h2>Мы отправили письмо с подтверждением на EMAIL-HERE-FROM-FLASK</h2>
+            <h2>Посетите Вашу электронную почту и пройдите по ссылке в письме</h2>
+
+            <a class="btn-rounded" href="/login"><h2>Хорошо</h2></a>        
+        </div>
+    </div>
+{% endblock %}

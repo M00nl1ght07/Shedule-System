@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/tech-support.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="central-wrapper">
+        <div class="image-container">
+            <img src="static/samples/gear.png" alt="lorem">
+        </div>
+
+        <div class="support-container">
+            <h1>На сайте проводятся технические работы</h1>
+            <p>Пожалуйста, попробуйте зайти позже. Спасибо за понимание!</p>
+            
+            <a href="/home" class="btn-rounded"><h2>На главную</h2></a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/account.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="central-wrapper">
+    <div class="app-wrapper">
+        <div class="main-container">
+            <h1>Профиль</h1>
+            <div class="profile">
+                <div class="image">
+                    <img src="static/samples/base_logo.png" alt="Lorem">
+                </div>
+                <!-- <div class="name">example.i.d.</div>     -->
+                <div class="actions">
+                    <!-- <a class="btn">Сменить пароль</a> -->
+                    <form method="post" enctype="multipart/form-data">
+                        <!-- CHECK THIS FUCKN ASS -->
+                        <!-- CHECK THIS FUCKN ASS -->
+                        <!-- CHECK THIS FUCKN ASS -->
+                        <input class="btn-rounded" type="submit" name="logout" value="Выйти">
+                        <!--  <a class="btn">Выйти</a> -->
+                    <form>
+                    <div class="btn-rounded">Назад</div>
+
+
+
+                    <!-- НА ВСЯКИЙ СЛУЧАЙ: ДАВИД, НЕ ЗНАЮ, КАК ТЕБЕ НАДО КНОПКУ "НАЗАД" СДЕЛАТЬ, 
+                        ПОЭТОМУ ПОКА ЧТО ПРОСТО БЛОК,
+                    ТЫ ПОТОМ ГЛАВНОЕ ПОСТАВЬ ЭЛЕМЕНТУ class="btn" -->
+
+
+
+                </div>
+            </div>
+                    
+            <div class="stats">
+                <div class="box">
+                    <span class="value"><b>Почта, привязанная к аккаунту</b></span>
+                    <span class="parameter">{{ email_user }}</span>
+                </div>
+                <div class="box">
+                    <span class="value"><b>Почта для рассылки замен</b></span>
+                    <span class="parameter">{{ better_email }}</span>    
+                </div>
+
+                <!-- POST EMAIL -->
+                <h3>Смена почты для рассылки</h3>
+                <form method="post" enctype="multipart/form-data">
+                    <label class="input-new-email">
+                        <label for="firstname">
+                            <input type="text" id="new-email" name="n-email" placeholder="Новая почта">
+                        </label>
+                        <button class="btn-strong" type="submit">Отправить</button>
+                    </label>
+                </form>
+                <!-- POST EMAIL -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/not-found-page.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="central-wrapper">
+        <div class="image-container">
+            <img src="static/samples/tool.png" alt="lorem">
+        </div>
+        <div class="message-container">
+            <h1>404</h1>
+            <h1>Упс, кажется, такой страницы не существует...</h1>
+            <a class="btn-rounded" href="/home"><h2>На главную</h2></a>
+        </div>
+    </div>
+{% endblock %}

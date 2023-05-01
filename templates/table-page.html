@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/table-page.css') }}">
+    
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+        rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script> 
+<script src="static/js/loader-animation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<script> 
+$('.input-file input[type=file]').on('change', function(){
+    let file = this.files[0];
+    $(this).closest('.input-file').find('.input-file-text').html(file.name);
+});
+</script>
+<div class = 'circle-wrapper'>
+    <div class="circle" id="hide" style="display: none">
+        <div class="loader"></div>
+    </div>
+</div>
+
+<div class = 'app'>
+<div class="app-wrapper">
+    <main class="main-content">
+        <div class="main">
+                <div class="information">
+                    <h1>Генератор Замен</h1>
+                    <p>Введите фамилию преподавателя, для которого нужно составить список замен</p>
+                </div>
+                <script>
+                    $( function() {
+                    var availableTags  = [
+                        {% for language in teachers_list_otch %}
+                            "{{language}}",
+                        {% endfor %}
+                    ];
+                    $( "#firstname" ).autocomplete({
+                      source: availableTags 
+                    });
+                  } );
+                </script>
+
+                <form action="{{url_for("gfg")}}" method="post">
+                <div class="getting-file">
+                    <label for="firstname">
+                        <input type="text" id="firstname" name="fname" placeholder="Фамилия">
+                    </label>
+                    <button type="submit" onclick="showHideDiv('ShowMoreDiv')">Получить файл</button>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Последний файл расписания</th>
+                                <th>Последний файл замен</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>{{w_timetable}}</b></td>
+                                <td><b>{{w_swaps}}</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="links">
+                    <a href="/upload">
+                        Загрузить новые файлы
+                    </a>
+
+                    <a href="/home">
+                        На главную
+                    </a>
+                </div>
+            </div>
+
+        <div class="teachers-list">
+            <h3>Список преподавателей, для которых есть замены:</h3>
+            <div class="scroll-block">
+                {% for i in range(lenarr) -%}
+                <li>{{ ln[i] }}</li>
+                {% endfor -%}
+            </div>
+        </div>
+        </main>
+    </div>
+</div>
+{% endblock %}

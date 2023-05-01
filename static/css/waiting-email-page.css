@@ -1,0 +1,112 @@
+/* ===================== Main ===================== */
+.image-container img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.check-email-message-container {
+    margin: 0px 30px 0px 30px;
+    color: #ffffff;
+}
+
+
+.email-header {
+    margin-bottom: 40px;
+}
+
+
+
+
+/* ===================== Adaptive ===================== */
+@media (max-width: 920px) and (orientation: landscape) {
+    .app-wrapper {
+        margin-top: 70px;
+    }
+
+    .email-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .check-email-message-container h1 {
+        font-size: 18px;
+    }
+
+    .check-email-message-container h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .email-icon img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .email-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .check-email-message-container h1 {
+        font-size: 20px;
+    }
+
+    .check-email-message-container h2 {
+        font-size: 20px;
+    }
+
+    .go-to-login {
+        border: 3px solid #ffffff;
+        padding: 6px 12px;
+    }
+}
+
+
+@media (max-width: 620px) and (orientation: landscape) {
+    .app-wrapper {
+        margin-top: 45px;
+    }
+
+    .go-to-login {
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 3px 15px;
+    }
+
+    .check-email-message-container h1 {
+        font-size: 16px;
+    }
+
+    .check-email-message-container h2 {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 740px) and (orientation: landscape) {
+    .email-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .go-to-login {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 4px 24px;
+    }
+
+    .check-email-message-container h1 {
+        font-size: 18px;
+    }
+    
+    .check-email-message-container h2 {
+        font-size: 18px;
+    } 
+}
+

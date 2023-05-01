@@ -1,0 +1,132 @@
+.welcome-container {
+    color: #fffff0;
+}
+html{
+    height: 100%;
+    width:100%;
+}
+
+.app-wrappwelcome{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trispace', sans-serif;
+    text-align: center;
+}
+
+.go-to-main {
+    margin-top: 15px;
+    font-family: "", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+    border: 4px solid #ffffff;
+    border-radius: 20px;
+}
+
+
+.go-to-main:hover {
+    background-color: #fffff0;
+    transition: 1.3s;
+    color: #000000;
+}
+
+
+.kpk-logo-container {
+    /*position: relative;*/
+    /*text-align: center;        */
+}
+
+
+.kpk-logo-container img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+/*Адаптив*/
+@media (max-width:320px) {
+    .kpk-logo-container img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width:450px) {
+    .welcome-container h1{
+        font-size: 25px;
+    }
+    .kpk-logo-container img{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .go-to-main {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 6px 25px;
+    }
+
+}
+
+@media (max-width:920px) and (orientation:landscape) {
+    .kpk-logo-container img{
+        width: 100px;
+        height: 100px;
+    }
+    .go-to-main {
+        border-radius: 16px;
+        border: 3px solid #ffffff;
+        padding: 6px 26px;
+    }
+    .welcome-container h1{
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width:750px) and (orientation:landscape) {
+    .kpk-logo-container img{
+        width: 90px;
+        height: 90px;
+    }
+    .go-to-main {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 4px 24px;
+    }
+    .welcome-container h1{
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width:600px) and (orientation:landscape) {
+    .kpk-logo-container img{
+        width: 70px;
+        height: 70px;
+    }
+    .go-to-main {
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 4px 20px;
+    }
+    .welcome-container h1{
+        font-size: 18px;
+    }
+
+}
+
+
+

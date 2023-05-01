@@ -1,0 +1,206 @@
+/* ========== Desktop ==========*/
+@media only screen and (max-width: 1200px) {
+    /*  */
+}
+
+@media only screen and (max-width: 992px) {
+    /*  */
+}
+
+@media only screen and (max-width: 768px) {
+    /*  */
+}
+
+@media only screen and (max-width: 480px) {
+    /*  */
+}
+
+@media (max-width: 320px) {
+    /*  */
+}
+
+
+/* 
+@media (max-width:320px) {
+    .kpk-logo-container img{
+        width: 65px;
+        height: 65px;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .go-to-reg, .go-to-login{
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 6px 25px;
+    }
+}
+
+@media (max-width:450px) {
+    .welcome-container h1{
+        font-size: 20px;
+    }
+    .kpk-logo-container img{
+        margin-top: 50px;
+        margin-bottom: 15px;
+        width: 80px;
+        height: 80px;
+    }
+    .welcome-container h2{
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width:680px) and (orientation:landscape) {
+    .kpk-logo-container img{
+        margin-top: 25px;
+        width: 80px;
+        height: 80px;
+    }
+    .go-to-reg, .go-to-login {
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 3px 15px;
+    }
+    .welcome-container h1{
+        font-size: 16px;
+    }
+    .welcome-container h2{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:740px) and (orientation:landscape) {
+    .kpk-logo-container img{
+         /* NEW 
+        margin-top: 10%;
+         /* NEW 
+        width: 90px;
+        height: 90px;
+    }
+    .go-to-reg, .go-to-login {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 4px 24px;
+    }
+    .welcome-container h1{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:750px) and (orientation:landscape) {
+    .kpk-logo-container img{
+         /* NEW 
+        margin-top: 40%;
+         /* NEW 
+        width: 150px;
+        height: 150px;
+    }
+    .go-to-reg, .go-to-login {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 6px 25px;
+    }
+}
+
+
+@media (max-width:920px) and (orientation:portrait) {
+    .kpk-logo-container img{
+        /*NEW
+        margin-top: 10%;
+        /*NEW
+        width: 100px;
+        height: 100px;
+    }
+    .go-to-reg, .go-to-login {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 6px 25px;
+    }
+}
+
+
+@media (max-width:920px) and (orientation:landscape) {
+    .kpk-logo-container img{
+        /* NEW
+        margin-top: 10%;
+         /* NEW
+        width: 100px;
+        height: 100px;
+    }
+    .go-to-reg, .go-to-login {
+        border-radius: 16px;
+        border: 3px solid #ffffff;
+        padding: 6px 26px;
+    }
+    .welcome-container h1{
+        font-size: 18px;
+    }
+    .welcome-container h2{
+        font-size: 14px;
+    }
+
+}
+ */
+
+
+
+
+/* BASE.css */
+/* @media (max-width: 991.98px) {
+    .app-wrapper h1{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .app-wrapper p{
+        margin: 14px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-wrapper h1{
+        margin: 0;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .app-wrapper h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 330px) {
+    .app-wrapper h1{
+        font-size: 25px;
+    }
+    .app-wrapper p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991.98px) and (orientation:portrait) {
+    .app-wrapper {
+        margin-top: 20%;
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 0;
+        transform: none;
+    }
+}
+
+
+@media (min-height: 700px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+} */
+/* BASE.css */

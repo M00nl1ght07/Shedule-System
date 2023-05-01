@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/login-form.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="central-wrapper">
+
+        <div class="image-container">
+            <img src="static/samples/base_logo.png" alt="lorem">
+        </div>
+
+        <div class="app-wrapper">
+            <div class="form-content">
+                <h1 class="header-form">Вход</h1>
+                <form id="form" action="#">
+
+                    <div class="email-input-container">
+                        <!--class="email-input"-->
+                        <input class="log-reg-input" type="email" placeholder="Email" id="email" onkeydown="validation()">
+                        <span id="text"></span>
+                        <p>В домене <b>@mirea.ru</b> или <b>@edu.mirea.ru</b></p>
+                    </div>
+
+                    <div class="password-input-container">
+                        <input class="log-reg-input" type="password" placeholder="Password">
+                        <!-- class="password-input" -->
+                    </div>
+
+                    <div class="log-reg-button-container">
+                        <button class="btn-strong">Войти</button>
+                    </div>
+
+                    <div class="links-container">
+                        <div class="link-register-rules">
+                            <a href="/rules">Нет аккаунта? Правила получения доступа</a>
+                        </div>
+                        <div class="link-register">
+                            <a href="/reg">Регистрация</a>
+                        </div>
+                        <div class="link-home"> 
+                            <a href="/home">Вернуться на главную</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

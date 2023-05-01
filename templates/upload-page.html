@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link rel="stylesheet", href="{{ url_for('static', filename='css/upload-page.css') }}">
+{% endblock %}
+
+{% block content %}
+        <div class="app-wrapperupload">
+        <div class="container"> 
+            <h1>
+                Загрузите новый файл
+            </h1>
+
+            <p>
+                Можно загружать файлы только со следующими расширениями: *.docx
+            </p>
+        </div>
+
+        <div class="files-upload-container">
+            <!-- <p>
+                Файл с расписанием:
+            </p>
+            <input type="file" name="shedule-file">
+            <button type="submit">Отправить</button> 
+            <form method="post" enctype="multipart/form-data">
+                <label class="input-file">
+                    <input type="file" name="file">
+                    <span class="input-file-btn">Файл с расписанием</span>           
+                    <span class="input-file-text">*.xlsx</span>
+                </label>
+                <button type="submit">Отправить</button>
+            </form> -->
+            <p>
+                Файл с заменами:
+            </p>
+            <!-- <input type="file" name="substitution-file">  -->
+            <form method="post" enctype="multipart/form-data">
+
+                <label class="input-file">
+                    <input type="file" name="file">
+                    <span class="input-file-btn">Файл с заменами</span>
+                    <span class="input-file-text">*.docx</span>
+                </label>
+
+                <button type="submit">Загрузить замены</button>
+            </form>
+        </div>
+
+        <div class="links">
+            <a href="/table">
+                На страницу получения файла
+            </a>
+
+        </div>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+            $('.input-file input[type=file]').on('change', function(){
+            let file = this.files[0];
+            $(this).closest('.input-file').find('.input-file-text').html(file.name);
+                });
+    </script>
+    </div>
+{% endblock %}

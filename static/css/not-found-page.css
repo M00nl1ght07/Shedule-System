@@ -1,0 +1,108 @@
+/* ===================== Main ===================== */
+h1 {
+    color: #ffffff;
+    font-size: 46px;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ===================== Adaptive ===================== */
+@media (max-width: 920px) and (orientation: landscape) {
+    .app-wrapper {
+        margin-top: 50px;
+    }
+
+    .tool-icon-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .message-container h1 {
+        font-size: 18px;
+    }
+
+    .message-container h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .tool-icon-container img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .message-container {
+        margin: 0px 10px 10px 0px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .tool-icon-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .message-container h1 {
+        font-size: 20px;
+    }
+
+    .message-container h2 {
+        font-size: 20px;
+    }
+
+    .go-to-login {
+        border: 3px solid #ffffff;
+        padding: 6px 12px;
+    }
+}
+
+
+@media (max-width: 620px) and (orientation: landscape) {
+    .app-wrapper {
+        margin-top: 45px;
+    }
+
+    .go-to-login {
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 3px 15px;
+    }
+
+    .message-container h1 {
+        font-size: 16px;
+    }
+
+    .message-container h2 {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 740px) and (orientation: landscape) {
+    .tool-icon-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .go-to-login {
+        border-radius: 14px;
+        border: 3px solid #ffffff;
+        padding: 4px 24px;
+    }
+
+    .message-container h1 {
+        font-size: 18px;
+    }
+    
+    .message-container h2 {
+        font-size: 18px;
+    } 
+}
